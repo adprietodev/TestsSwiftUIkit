@@ -12,6 +12,10 @@
 		CC4B97FB2C12048C00B56FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4B97FA2C12048C00B56FFC /* Assets.xcassets */; };
 		CC4B97FE2C12048C00B56FFC /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CC4B97FD2C12048C00B56FFC /* Base */; };
 		CC4B980D2C12085900B56FFC /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B980C2C12085900B56FFC /* CustomTabBarController.swift */; };
+		CC4B98112C120BBE00B56FFC /* CarrouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B980F2C120BBE00B56FFC /* CarrouselViewController.swift */; };
+		CC4B98122C120BBE00B56FFC /* CarrouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4B98102C120BBE00B56FFC /* CarrouselViewController.xib */; };
+		CC4B98172C120ED700B56FFC /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B98152C120ED700B56FFC /* ImageCollectionViewCell.swift */; };
+		CC4B98182C120ED700B56FFC /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4B98162C120ED700B56FFC /* ImageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CC4B97FD2C12048C00B56FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4B97FF2C12048C00B56FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4B980C2C12085900B56FFC /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		CC4B980F2C120BBE00B56FFC /* CarrouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselViewController.swift; sourceTree = "<group>"; };
+		CC4B98102C120BBE00B56FFC /* CarrouselViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarrouselViewController.xib; sourceTree = "<group>"; };
+		CC4B98152C120ED700B56FFC /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC4B98162C120ED700B56FFC /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 		CC4B98072C12075D00B56FFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CC4B980E2C120B6700B56FFC /* Carrousel */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -99,6 +108,7 @@
 		CC4B980A2C12081100B56FFC /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				CC4B98132C120E9F00B56FFC /* Cells */,
 				CC4B980B2C12082800B56FFC /* CustomTabBar */,
 			);
 			path = Commons;
@@ -110,6 +120,32 @@
 				CC4B980C2C12085900B56FFC /* CustomTabBarController.swift */,
 			);
 			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		CC4B980E2C120B6700B56FFC /* Carrousel */ = {
+			isa = PBXGroup;
+			children = (
+				CC4B980F2C120BBE00B56FFC /* CarrouselViewController.swift */,
+				CC4B98102C120BBE00B56FFC /* CarrouselViewController.xib */,
+			);
+			path = Carrousel;
+			sourceTree = "<group>";
+		};
+		CC4B98132C120E9F00B56FFC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CC4B98142C120EAE00B56FFC /* Image */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CC4B98142C120EAE00B56FFC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				CC4B98152C120ED700B56FFC /* ImageCollectionViewCell.swift */,
+				CC4B98162C120ED700B56FFC /* ImageCollectionViewCell.xib */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +208,8 @@
 			files = (
 				CC4B97FB2C12048C00B56FFC /* Assets.xcassets in Resources */,
 				CC4B97FE2C12048C00B56FFC /* Base in Resources */,
+				CC4B98182C120ED700B56FFC /* ImageCollectionViewCell.xib in Resources */,
+				CC4B98122C120BBE00B56FFC /* CarrouselViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,8 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4B97F22C12048B00B56FFC /* AppDelegate.swift in Sources */,
+				CC4B98172C120ED700B56FFC /* ImageCollectionViewCell.swift in Sources */,
 				CC4B980D2C12085900B56FFC /* CustomTabBarController.swift in Sources */,
 				CC4B97F42C12048B00B56FFC /* SceneDelegate.swift in Sources */,
+				CC4B98112C120BBE00B56FFC /* CarrouselViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
