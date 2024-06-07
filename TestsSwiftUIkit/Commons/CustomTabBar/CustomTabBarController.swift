@@ -21,13 +21,16 @@ class CustomTabBarController: UITabBarController {
         tabBar.backgroundColor = .white
         let carrouselViewController = CarrouselViewController()
         let carrouselNavigationController = UINavigationController(rootViewController: carrouselViewController)
-    
-        let tabBarList = [carrouselNavigationController]
+        let dropDownViewController = DropDownViewController()
+        let dropDownNavigationController = UINavigationController(rootViewController: dropDownViewController)
+        let tabBarList = [dropDownNavigationController,carrouselNavigationController]
         self.setViewControllers(tabBarList, animated: true)
 
         guard let items = self.tabBar.items else { return }
-        items[0].image = UIImage(systemName: "photo.on.rectangle")
-        items[0].title = "Carrousel"
+        items[0].image = UIImage(systemName: "arrow.down")
+        items[0].title = "DropDown"
+        items[1].image = UIImage(systemName: "photo.on.rectangle")
+        items[1].title = "Carrousel"
 
         self.tabBar.itemPositioning = .centered
     }
