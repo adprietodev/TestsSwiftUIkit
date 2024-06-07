@@ -16,6 +16,10 @@
 		CC4B98122C120BBE00B56FFC /* CarrouselViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4B98102C120BBE00B56FFC /* CarrouselViewController.xib */; };
 		CC4B98172C120ED700B56FFC /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4B98152C120ED700B56FFC /* ImageCollectionViewCell.swift */; };
 		CC4B98182C120ED700B56FFC /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4B98162C120ED700B56FFC /* ImageCollectionViewCell.xib */; };
+		CC59B9822C1308DC000FDFAF /* DropDownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC59B9812C1308DC000FDFAF /* DropDownViewController.xib */; };
+		CC59B9832C1308DC000FDFAF /* DropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59B9802C1308DC000FDFAF /* DropDownViewController.swift */; };
+		CC59B9872C130B1D000FDFAF /* DropDownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC59B9862C130B1D000FDFAF /* DropDownTableViewCell.xib */; };
+		CC59B9882C130B1D000FDFAF /* DropDownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59B9852C130B1D000FDFAF /* DropDownTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		CC4B98102C120BBE00B56FFC /* CarrouselViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarrouselViewController.xib; sourceTree = "<group>"; };
 		CC4B98152C120ED700B56FFC /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CC4B98162C120ED700B56FFC /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		CC59B9802C1308DC000FDFAF /* DropDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownViewController.swift; sourceTree = "<group>"; };
+		CC59B9812C1308DC000FDFAF /* DropDownViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownViewController.xib; sourceTree = "<group>"; };
+		CC59B9852C130B1D000FDFAF /* DropDownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTableViewCell.swift; sourceTree = "<group>"; };
+		CC59B9862C130B1D000FDFAF /* DropDownTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 		CC4B98072C12075D00B56FFC /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CC59B97F2C1308B3000FDFAF /* DropDown */,
 				CC4B980E2C120B6700B56FFC /* Carrousel */,
 			);
 			path = Modules;
@@ -146,6 +155,25 @@
 				CC4B98162C120ED700B56FFC /* ImageCollectionViewCell.xib */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		CC59B97F2C1308B3000FDFAF /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				CC59B9842C130AFB000FDFAF /* Cell */,
+				CC59B9802C1308DC000FDFAF /* DropDownViewController.swift */,
+				CC59B9812C1308DC000FDFAF /* DropDownViewController.xib */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
+		CC59B9842C130AFB000FDFAF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC59B9852C130B1D000FDFAF /* DropDownTableViewCell.swift */,
+				CC59B9862C130B1D000FDFAF /* DropDownTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4B97FB2C12048C00B56FFC /* Assets.xcassets in Resources */,
+				CC59B9822C1308DC000FDFAF /* DropDownViewController.xib in Resources */,
 				CC4B97FE2C12048C00B56FFC /* Base in Resources */,
 				CC4B98182C120ED700B56FFC /* ImageCollectionViewCell.xib in Resources */,
+				CC59B9872C130B1D000FDFAF /* DropDownTableViewCell.xib in Resources */,
 				CC4B98122C120BBE00B56FFC /* CarrouselViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +252,9 @@
 			files = (
 				CC4B97F22C12048B00B56FFC /* AppDelegate.swift in Sources */,
 				CC4B98172C120ED700B56FFC /* ImageCollectionViewCell.swift in Sources */,
+				CC59B9882C130B1D000FDFAF /* DropDownTableViewCell.swift in Sources */,
 				CC4B980D2C12085900B56FFC /* CustomTabBarController.swift in Sources */,
+				CC59B9832C1308DC000FDFAF /* DropDownViewController.swift in Sources */,
 				CC4B97F42C12048B00B56FFC /* SceneDelegate.swift in Sources */,
 				CC4B98112C120BBE00B56FFC /* CarrouselViewController.swift in Sources */,
 			);
